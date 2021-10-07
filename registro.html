@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>registro</title>
+</head>
+
+<body>
+    <div class="container">
+    <form id="form-registro" onsubmit="checkCorreo();checkNombre();checkApellido();checkTelefono();checkContrasena()">
+        <fieldset>
+            <legend> <h1>Registro</h1></legend>
+
+            <label for="nombre">Nombre </label>
+            <input id="nombre" type="name" name="nombre"><br>
+
+            <label for="apellido">Apellido </label>
+            <input id="apellido" type="name" name="apellido"><br>
+
+            <label for="telefono">Telefono</label>
+            <input id="telefono" type="number" name="telefono"><br>
+
+            <label for="correo">Correo </label>
+            <input id="correo" type="email" name="correo"><br>
+
+            <label for="contrasena">Contraseña </label>
+            <input id="contrasena" type="password" name="contrasena"><br>
+
+            <input type="button" id="btn-submit-form" onclick="agregarRegistro();ordenarArreglo();filtrarCorreo()">
+            
+
+        </fieldset>
+    </form>
+</div>
+<script src="form.js"></script>
+<script src="registro.js"></script>
+</body>
+</html>
